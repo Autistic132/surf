@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+   
+  
+}
+body{
+font-family: Alegreya Sans;
+color: #666666;
+font-size: 16px;
+line-height: 1.42;
+margin: 0;
+background: #fff;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+ul {
+padding:0;
+margin:0;
+}
+ul li {
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: none;
+}
+a {
+    color: inherit; 
+ }
+
+p {
+    margin-top: 0;
+}
+img {
+    display: block;
+    
+}
+body, html {
+    height: 100%;
+}
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.container {
+
+    margin: 0 auto;
+    width: 1100px;
+    
+}

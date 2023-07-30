@@ -1,0 +1,22 @@
+.section {
+    min-height: 100vh;
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &--color--white {
+        color: #fff;
+
+        .section__title {
+           color: inherit;
+        }
+    }
+}
+.section__title {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #292929;
+    margin-top: 27px;
+}

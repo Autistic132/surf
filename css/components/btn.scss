@@ -1,0 +1,34 @@
+.btn {
+    padding: 21px 41px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    background: var(--yellow, #FEDB3F);
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    font-family: Alegreya Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 18px; /* 112.5% */
+    border: none;
+    text-transform: uppercase;
+
+    &:hover{
+        background: #FFD517;
+    }
+
+    &-reset {
+        background: transparent;
+        color: #fff;
+        text-transform: none;
+        padding-left: 19px;
+
+        &:hover {
+            background: transparent;
+            color: gray;
+        }
+    }
+
+}
