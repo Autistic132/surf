@@ -1,17 +1,15 @@
 .form {
     display: flex;
-    margin-bottom: 105px;
+    margin-bottom: 88px;
     
 }
 .form__col {
     flex: 1;
-    margin-left: 83px;
-    margin-right: 24px;
     
 
     &:last-child {
-        margin-right: 79px;
-        margin-left: 0;
+       margin-right: 0;
+       margin-left: 22px;
     }
 }
 .form__row {
@@ -21,7 +19,7 @@
 .form__block {
     flex: 1;
 
-    margin-right: 20px;
+    margin-right: 12px;
 
     &:last-child {
         margin-right: 0;

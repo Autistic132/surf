@@ -54,7 +54,7 @@ button {
 
 .container {
   margin: 0 auto;
-  width: 1100px;
+  width: 940px;
 }
 
 .hero {
@@ -74,8 +74,8 @@ button {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 28px 80px 61px;
-  margin: 0;
+  padding-top: 22px;
+  padding-bottom: 63px;
 }
 
 .hero__title-section {
@@ -245,6 +245,8 @@ button {
   flex: 1;
   padding-top: 5px;
   position: relative;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 .benefits__item:before {
   position: absolute;
@@ -254,11 +256,11 @@ button {
   transform: translateX(50%);
 }
 .benefits__item:first-child {
-  padding-left: 54px;
-  padding-right: 0;
+  padding-left: 0;
 }
 .benefits__item:last-child {
-  padding-right: 52px;
+  padding-left: 12px;
+  padding-right: 0;
 }
 .benefits__item:last-child:before {
   display: none;
@@ -294,11 +296,11 @@ button {
   font-weight: 700;
   line-height: normal;
   color: #292929;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .benefit__desc {
-  padding-bottom: 15px;
+  padding-bottom: 22px;
 }
 
 .reviews__display {
@@ -307,8 +309,6 @@ button {
   margin-bottom: 15px;
   overflow: hidden;
   position: relative;
-  margin-left: 78px;
-  margin-right: 81px;
 }
 .reviews__display:before {
   content: "";
@@ -345,8 +345,8 @@ button {
 
 .reviews__content {
   flex: 1;
-  margin-top: 28px;
-  margin-left: 39px;
+  margin-left: 32px;
+  margin-top: 33px;
 }
 
 .reviews__title {
@@ -423,17 +423,15 @@ button {
 
 .form {
   display: flex;
-  margin-bottom: 105px;
+  margin-bottom: 88px;
 }
 
 .form__col {
   flex: 1;
-  margin-left: 83px;
-  margin-right: 24px;
 }
 .form__col:last-child {
-  margin-right: 79px;
-  margin-left: 0;
+  margin-right: 0;
+  margin-left: 22px;
 }
 
 .form__row {
@@ -443,7 +441,7 @@ button {
 
 .form__block {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 12px;
 }
 .form__block:last-child {
   margin-right: 0;
@@ -507,7 +505,7 @@ button {
   position: relative;
   border-radius: 50%;
   background: #fff;
-  margin-right: 10px;
+  margin-right: 12px;
 }
 .radio__visible::before {
   content: "";
@@ -529,13 +527,13 @@ button {
 
 .fixed-menu {
   position: fixed;
-  top: 35%;
-  right: 3%;
+  top: 59%;
+  right: 4%;
   z-index: 100;
 }
 
 .fixed-menu__item {
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 .fixed-menu__item--active .fixed-menu__link {
   border-color: #fff;
