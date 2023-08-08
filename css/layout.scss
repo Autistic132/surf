@@ -1,12 +1,24 @@
 * {
     box-sizing: border-box;
-   
-  
+}
+html {
+
+    font-size: $baseFontSize;
+
+
+    @include tablets {
+        font-size: $baseFontSize - 1px;
+    }
+
+    
+    @include phones {
+        font-size: $baseFontSize - 2px;
+    }
+
 }
 body{
 font-family: Alegreya Sans;
 color: #666666;
-font-size: 16px;
 line-height: 1.42;
 margin: 0;
 background: #fff;
@@ -43,9 +55,18 @@ button {
     border: none;
     cursor: pointer;
 }
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
 .container {
-
+    
+    position: relative;
     margin: 0 auto;
-    width: 940px;
+    max-width: $containerWidth;
+    width: 95%;
+    
     
 }

@@ -1,38 +1,87 @@
-.hero {
-    background: url("../img/bg.png") no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-   -o-background-size: cover;
+.hero-content {
+    background: url("../img/bg.png") right 50% bottom no-repeat;
     background-size: cover;
-    background-color: #1968B1;
+
+    @include tablets {
+        background: none;
+    }
+}
+.hero {
+    display: flex;
     min-height: 100vh;
     color: #FFFFFF;
-    max-height: 652px;
+    max-height: rem(652px);
 
+    @include tablets {
+    
+            background:  url("../img/bg2.png") center top no-repeat;
+            background-size: cover;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+    }
+}
+.hero__icon-section {
+    @include tablets {
+        display: none;
+    }
 }
 .hero__container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding-top: 22px;
-    padding-bottom: 63px;
+    padding-top: rem(22px);
+    padding-bottom: rem(63px);
+
+
+    @include phones {
+        padding-bottom: rem(216px);
+    }
+
 }
 .hero__title-section {
     width: 46%;
+    
+    
+    @include tablets {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: rem(116px);
+    }
 }
 .hero__main-title {
-    font-size: 48px;
+    font-size: rem(48px);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
-    margin-bottom: 17px;
+    margin-bottom: rem(17px);
+   
+    @include tablets {
+        padding: 0 5%;
+    }
+
+    @include phones {
+        font-size: rem(42px);
+        padding: 0 5%;
+        margin-bottom: rem(3px);
+        max-width: 473px;
+    }
 }
 .hero__title-desc {
-    font-size: 21px;
+    font-size: rem(21px);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 60px;
+    margin-bottom: rem(60px);
+
+    @include tablets {
+        margin-bottom: rem(46px);
+    }
 }

@@ -2,10 +2,18 @@
     text-align: center;
 }
 .headline__title {
-    margin-bottom: 14px;
+    margin-bottom: rem(14px);
     
 }
 .headline__subtitle {
     padding: 0 29%;
-    margin-bottom: 43px;
+    margin-bottom: rem(43px);
+
+    @include tablets {
+        padding: 0 22%;
+    }
+
+    @include phones {
+        padding: 0 2%;
+     }
 }

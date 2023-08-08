@@ -1,7 +1,7 @@
 .reviews__display {
     background: #F8FAF9;
-    padding: 42px 42px;
-    margin-bottom: 15px;
+    padding: rem(42px) rem(42px);
+    margin-bottom: rem(15px);
     overflow: hidden;
     position: relative;
 
@@ -9,26 +9,44 @@
     &:before {
         content: "";
         display: block;
-        width: 90px;
-        height: 90px;
+        width: rem(90px);
+        height: rem(90px);
         background: #fff;
         border-radius: 50%;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        top: -65px;
+        top: rem(-65px);
+    }
+
+    @include tablets {
+        margin-bottom: rem(38px);
     }
 }
 .reviews-section__title {
-    margin-bottom: 23px;
+    margin-bottom: rem(23px);
     margin-top: 0;
 }
 .reviews__display-inner {
     display: flex;
+
+
+    @include tablets {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    
+    }
 }
 .reviews__avatar {
-    width: 253px;
-    height: 264px;
+    width: rem(253px);
+    height: rem(264px);
+
+    @include tablets {
+        width: rem(130px);
+        height: rem(130px);
+        margin-top: rem(23px);
+    }
     
 }
 .reviews__avatar-img {
@@ -39,34 +57,48 @@
 }
 .reviews__content {
     flex: 1;
-    margin-left: 32px;
-    margin-top: 33px;
+    margin-left: rem(32px);
+    margin-top: rem(33px);
+
+    @include tablets {
+        margin-left: 0px;
+        margin-top: rem(44px);
+    }
 }
 .reviews__title {
     color:#292929;
-    font-size: 27px;
+    font-size: rem(27px);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 14px;
+    margin-bottom: rem(14px);
 }
 .reviews__text {
-    max-width: 438px;
-    margin-bottom: 20px;
+    max-width: rem(438px);
+    margin-bottom: rem(20px);
+
+    @include tablets {
+        max-width: 100%;
+        margin-bottom: 0px;
+    }
 }
 .reviews__author {
     color: #292929;
-    font-size: 18px;
+    font-size: rem(18px);
     font-style: normal;
     font-weight: bold;
-    line-height: 24px; 
+    line-height: rem(24px); 
 }
 .reviews__switcher {
     display: flex;
     justify-content: center;
-    margin-right: 6px;
+    margin-right: rem(6px);
 
     &:last-child {
         margin-right: 0;
+    }
+
+    @include tablets {
+        margin-bottom: rem(108px);
     }
 }
