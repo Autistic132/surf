@@ -47,3 +47,11 @@
         margin-left: rem(94px);
     }
 }
+
+.slider__btn {
+    margin-right: rem(39px);
+
+   @include tablets {
+     margin-right: rem(40px);
+   }
+}

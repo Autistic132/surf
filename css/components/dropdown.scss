@@ -1,0 +1,105 @@
+.dropdown {
+    position: relative;
+    display: inline-flex;
+    margin-bottom: rem(54px);
+    margin-right: rem(318px);
+
+    &:hover {
+    .dropdown__menu {
+        display: inline-flex;
+        left: rem(91px);
+    }
+
+    
+}
+
+
+    @include tablets {
+        margin: 0;
+    }
+}
+.dropdown__slider--title {
+    position: relative;
+    display: inline-flex;
+    width: rem(91px);
+    height: rem(91px);
+    border-radius: 4px;
+    background: #3A587E;
+    text-decoration: none;
+   
+   
+    @include tablets {
+        display: none;
+    }
+}
+.slider__dropdown--logo {
+    position: absolute;
+    padding: rem(17px) rem(26px) rem(36px) rem(27px);
+}
+.slider__dropdown--logo--title {
+    padding: rem(62px) rem(5px) rem(12px) rem(7px);
+    color: #FFF;
+    text-align: center;
+    font-family: Alegreya Sans;
+    font-size: rem(14px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+   
+}
+.dropdown__menu {
+    display: none;
+    position: absolute;
+    background: #CDD1D2;   
+    top: 0;
+    right: rem(22px);
+    left: rem(-99999px);
+    min-width: rem(273px);
+    min-height: rem(291px);
+    border-radius: rem(8px);
+
+    &:before {
+        content: "";
+        display: flex;
+        height: rem(95px);
+        width: rem(92px);
+        left: rem(-91px);
+        right: 0px;
+        top: 0px;
+        position: absolute;
+    }
+}
+
+
+.dropdown__item {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center; 
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: rem(16px);
+    font-weight: 500;
+    margin-left: rem(14px);
+    min-width: rem(235px);
+    padding-left: rem(12px);
+    margin-bottom: rem(13px);
+    &:first-child {
+        
+        margin-top: rem(23px);
+    }
+}
+.dropdown__item--logo--img {
+    
+    margin-right: rem(11px);
+    max-width: rem(36px);
+    max-height: rem(36px);
+    
+    
+}
+.dropdown__item--title {
+   flex: 1;
+}
+.dropdown__item__desc {
+    justify-content: flex-end;
+}

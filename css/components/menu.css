@@ -13,7 +13,7 @@ Error: Undefined mixin 'tablets'.
 8:     }
 9:     
 10:   
-11: }
+11:     &--modal {
 
 Backtrace:
 C:\Users\rtnav\Desktop\Новая папка\css\components\menu.scss:6:in `tablets'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 6 of C:\Users\rtnav\Desktop\Новая папка\css\components\menu.scss, in `tablets'\A         from line 6 of C:\Users\rtnav\Desktop\Новая папка\css\components\menu.scss\A \A 1: .menu {\A 2:     margin: 0 15px;\A 3:     padding-top: 4px;\A 4:     color: #fff;\A 5: \A 6:     @include tablets {\A 7:         display: none;\A 8:     }\A 9:     \A 10:   \A 11: }"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 6 of C:\Users\rtnav\Desktop\Новая папка\css\components\menu.scss, in `tablets'\A         from line 6 of C:\Users\rtnav\Desktop\Новая папка\css\components\menu.scss\A \A 1: .menu {\A 2:     margin: 0 15px;\A 3:     padding-top: 4px;\A 4:     color: #fff;\A 5: \A 6:     @include tablets {\A 7:         display: none;\A 8:     }\A 9:     \A 10:   \A 11:     &--modal {"; }

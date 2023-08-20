@@ -1,14 +1,22 @@
 .footer {
-    margin-top: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: rem(23px) 0;
+    background: #fff;
 
 
     
 }
 .footer__container {
-    height: rem(93px);
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .footer__col {

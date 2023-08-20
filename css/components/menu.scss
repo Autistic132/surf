@@ -8,6 +8,9 @@
     }
     
   
+    &--modal {
+        display: flex;
+    }
 }
 .menu__list {
     display: flex;
@@ -38,10 +41,24 @@
     white-space: nowrap;
 }
 .phone-nubmer__icon {
-    flex-shrink: 0;
-}
-.phone-nubmer__icon-elem {
-    width: rem(13px);
-    height: rem(13px);
+    flex-shrink: 0;  
+    width: rem(16px);
+    height: rem(16px);
     margin-right: rem(6px);
 }
+
+.menu--vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Alegreya Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 72px; 
+}
+
