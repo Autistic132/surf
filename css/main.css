@@ -27,7 +27,7 @@ button { background: transparent; border: none; cursor: pointer; }
 
 .wrapper { position: relative; width: 100%; min-height: 100%; overflow: hidden; }
 
-.container { position: relative; margin: 0 auto; max-width: 940px; width: 100%; }
+.container { position: relative; margin: 0 auto; max-width: 940px; width: 95%; }
 
 .hero-content { background: url("../img/bg.png") right 50% bottom no-repeat; background-size: cover; }
 @media screen and (max-width: 768px) { .hero-content { background: none; } }
