@@ -58,6 +58,10 @@
         padding: rem(6px) rem(11px);
     }
 }
+
+.form__input_error {
+    border: rem(3px) solid red;
+}
 .form__input-textarea {
     
     height: rem(152px);

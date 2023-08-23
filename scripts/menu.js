@@ -9,7 +9,9 @@ openButton.addEventListener('click', () => {
 })
 
 closeButton.addEventListener('click', () => {
+ 
   modal.classList.remove("modal__opened")
   body.classList.remove("body__closed")
 
 })
+

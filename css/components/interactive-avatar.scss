@@ -6,7 +6,7 @@
     overflow: hidden;
     position: relative;
 
-    &--active {
+    &.active {
         border: rem(6px) solid  #FEDB3F;
 
     }

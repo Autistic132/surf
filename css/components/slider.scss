@@ -55,8 +55,14 @@
         top: 50%;
         margin: 0 auto;
         z-index: 10; 
+        width: rem(24px);
+        height: rem(40px);
+        flex-shrink: 0;
+        
 
     &--left {
+        background: url("../img/icons/left.svg");
+        background-size: contain;
        left: 0;
 
        @include tablets {
@@ -65,12 +71,14 @@
        }
 
        @include phones {
-        left: 1%;
-        top: 23%;
+        left: 0%;
+        top: 24%;
        }
     }
 
     &--right {
+        background: url("../img/icons/right.svg");
+        background-size: contain;
         right: 0;
 
         @include tablets {
@@ -79,8 +87,8 @@
         }
 
         @include phones {
-            right: 3%;
-            top: 23%;
+            right: 0%;
+            top: 24%;
         }
     }
 }
@@ -217,4 +225,22 @@
    @include tablets {
     margin-right: rem(51px);
    }
+
+   @include phones {
+    margin-right: rem(48px);
+   }
 }
+ .slider__products {
+    position: relative;
+
+    .bx-controls {
+        display: none;
+
+    }
+    .bx-wrapper {
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+        overflow: hidden;
+    }
+ }

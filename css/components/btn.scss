@@ -54,4 +54,8 @@
    @include tablets {
      margin-right: rem(40px);
    }
+
+   @include phones {
+    margin-right: 0;
+   }
 }
