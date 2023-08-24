@@ -23,7 +23,6 @@ const validateForm = (data) => {
     for (const key in data) {
         const element = data[key];
         const valid = validateField(element)
-    console.log(element.value);
         if (!valid) {
             isValid = false
         }
@@ -35,26 +34,7 @@ const validateForm = (data) => {
 form.addEventListener("submit", (e) => {
     e.preventDefault()
     
-    $.ajax({
-        url: "https://webdev-api.loftschool.com/sendmail",
-        method: "post",
-        data: {
-            name: form.elements.name.value,
-            phone: form.elements.phone.value,
-            comment: form.elements.comment.value,
-            to: form.elements.to.value,
-            },
-        success: (data) => {
-           
-                modalForm.classList.add("modal__form__opened")
-            },
-        error: (data) => {
-            
-            modalFormNone.classList.add("modal__form__opened") 
-        
-        }
-        
-    });
+  
     const data = {
         name: form.elements.name, 
         phone: form.elements.phone, 
@@ -64,10 +44,28 @@ form.addEventListener("submit", (e) => {
   
 
     if (validateForm(data)) {
-        //modalForm.classList.add("modal__form__opened")
-    } else {
-            //modalFormNone.classList.add("modal__form__opened")        
-    }
+        $.ajax({
+            url: "https://webdev-api.loftschool.com/sendmail",
+            method: "post",
+            data: {
+                name: form.elements.name.value,
+                phone: form.elements.phone.value,
+                comment: form.elements.comment.value,
+                to: form.elements.to.value,
+                },
+            success: (data) => {
+               
+                    modalForm.classList.add("modal__form__opened")
+                
+                },
+            error: (data) => {
+                
+                modalFormNone.classList.add("modal__form__opened") 
+            
+            }
+            
+        });
+    } 
 });
 
 closeButtonForm.addEventListener('click', (e) => {
