@@ -1,6 +1,7 @@
 .hero-content {
-    background: url("../img/bg.png") right 50% bottom no-repeat;
+    background: url("../img/bg.png") right 50% top no-repeat;
     background-size: cover;
+    height: 100%;
 
     @include tablets {
         background: none;
@@ -8,13 +9,12 @@
 }
 .hero {
     display: flex;
-    min-height: 100vh;
     color: #FFFFFF;
     max-height: rem(652px);
 
     @include tablets {
     
-            background:  url("../img/bg2.png") center top no-repeat;
+            background:  url("../img/bg2.png") center center no-repeat;
             background-size: cover;
             text-align: center;
             align-items: center;
@@ -31,7 +31,6 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding-top: rem(22px);
     padding-bottom: rem(63px);
 
 

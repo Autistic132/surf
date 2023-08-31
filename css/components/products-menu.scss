@@ -1,0 +1,96 @@
+$desktopContentWidth: 50vW;
+$tabletContentWidth: 64vW;
+
+.products-menu-section {
+    position: relative;
+    color: #fff;
+    background: url("../img/slide1.png") center center/cover no-repeat;
+}
+.products-menu-section__title {
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Desktop / Headline 1 */
+    font-family: Alegreya Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 34%;
+    margin-left: 5%;
+}
+.products-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+}
+.products-menu__item {
+    display: flex;
+
+}
+.products-menu__title {
+    position: relative;
+    width: rem(100px);
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+   
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+    
+}
+.products-menu__image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    
+}
+.products-menu__text {
+    transform: rotate(-90deg);
+    padding: rem(140px) rem(85px) rem(142px) rem(12px);
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Alegreya Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+.products-menu__content {
+    background: rgba(51, 53, 55, 0.90);
+    backdrop-filter: blur(5px);
+    width: 0;
+    position: relative;
+    overflow: hidden;
+    transition: width .7s;
+
+    &--active {
+        width: $desktopContentWidth;
+        display: flex;
+
+      }
+
+      @include tablets {
+        &--active {
+          width: $tabletContentWidth;
+      }
+    }
+}
+.products-menu__container {
+    padding: rem(40px) rem(73px) rem(45px) rem(26px);
+}
+.products-menu__close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    border: none;
+    background: transparent;
+}
+.products-menu__content-text {
+  
+}
