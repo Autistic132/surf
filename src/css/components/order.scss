@@ -1,0 +1,12 @@
+.order-section {
+    background: url("../img/bg-form.png") no-repeat;
+    -webkit-background-size: cover;
+
+    @include phones {
+        background-position: left 50% bottom ;
+    }
+}
+.order-section__title {
+    margin-top: rem(57px);
+    margin-bottom: rem(53px);
+}

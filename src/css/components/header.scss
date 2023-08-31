@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: rem(18px);
+    color: #fff;
+
+
+        @include tablets {
+    background-color: #1968B1;
+    padding-bottom: 0;
+    padding-top: rem(6px);
+    }
+
+        @include phones {
+            padding-bottom: rem(6px);
+        }
+}
+
+.header__container {
+    display: flex;
+    
+    justify-content: space-between;
+    height: 100%;
+    padding-top: rem(22px);
+    padding-bottom: rem(63px);
+
+    @include tablets {
+        padding-bottom: rem(28px);
+    }
+}
+
+.logo {
+    width: rem(55px);
+    height: rem(39px);
+}
+.phone-number.header__phone-number {
+
+    @include tablets {
+        display: none ;
+    }
+}
+

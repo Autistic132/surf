@@ -1,0 +1,247 @@
+
+.slider-section {
+    background-color: #F8FAF9;
+}
+.slider__container {
+   max-width: 990px;
+   overflow: hidden;
+
+}
+.slider {
+    width: 100%;
+    left: 0;
+    transition: 0.5s;
+    position: relative;
+    display: flex;
+}
+
+.slider__main {
+    flex-shrink: 0;
+    overflow: hidden;
+
+}
+.slider__content {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   
+
+    @include tablets {
+        align-items: center;
+        text-align: center;
+        margin-top: 0;
+    }
+}
+.slider__main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+
+    @include tablets {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+.slider__main--img {
+    display: flex;
+    justify-content: center;
+}
+.slider-btn {
+        position: absolute;
+        top: 50%;
+        margin: 0 auto;
+        z-index: 10; 
+        width: rem(24px);
+        height: rem(40px);
+        flex-shrink: 0;
+        
+
+    &--left {
+        background: url("../img/icons/left.svg");
+        background-size: contain;
+       left: 0;
+
+       @include tablets {
+        left: 19%;
+        top: 26%;
+       }
+
+       @include phones {
+        left: 0%;
+        top: 24%;
+       }
+    }
+
+    &--right {
+        background: url("../img/icons/right.svg");
+        background-size: contain;
+        right: 0;
+
+        @include tablets {
+            right: 21%;
+            top: 26%;
+        }
+
+        @include phones {
+            right: 0%;
+            top: 24%;
+        }
+    }
+}
+
+.slider__img {
+    min-width: rem(419px);
+    min-height: rem(538px);
+    margin-right: rem(67px);
+    margin-left: rem(60px);
+    background:url("../img/board.png")right top no-repeat, url("../img/vector2.png") center bottom 36% no-repeat;
+
+    @include tablets {
+        min-width: rem(318px);
+        min-height: rem(417px);
+        background-size: contain;
+    }
+
+    @include phones {
+        min-width: rem(271px);
+        min-height: rem(376px);
+        margin-right: 0;
+        margin-left: 0px;
+    }
+
+}
+.slider__title {
+    font-size: rem(36px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    color: var(--black, #292929);
+    font-feature-settings: 'clig' off, 'liga' off;
+    margin-bottom: rem(29px);
+
+    @include tablets {
+        font-size: rem(30px);
+        margin-right: rem(38px);
+        margin-bottom: rem(19px);
+    }
+
+    @include phones {
+        font-size: rem(30px);
+        margin-top: rem(30px);
+        margin-bottom: rem(21px);
+    }
+
+     
+}
+.slider__desc {
+    line-height: 1.2;
+    width: 90%;
+
+    @include tablets {
+        width: 69%;
+
+        margin-bottom: rem(12px);
+    }
+
+    @include phones {
+        margin-bottom: rem(20px);
+        width: 75%;
+    }
+}
+.slider__size {
+    display: flex;
+    justify-content: space-between;
+    margin-right: rem(125px);
+    margin-bottom: rem(20px);
+
+    @include tablets {
+        margin-right: 0;
+        text-align: left;
+        margin-left: rem(60px);
+        margin-bottom: rem(11px);
+    }
+
+    @include phones {
+        margin-left: rem(62px);
+
+    }
+}
+
+.slider__size--text {
+   
+   @include tablets {
+    margin-right: rem(60px);
+   }
+
+   @include phones {
+    margin-right: rem(64px);
+   }
+}
+.size__title {
+    font-size: rem(18px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.size__desc {
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: rem(18px);
+    font-style: normal;
+    font-weight: 700;
+
+
+    @include tablets {
+        margin-bottom: rem(13px);
+    }
+    
+}
+.slider__buy {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(46px);
+   
+   
+    @include tablets {
+    margin-left: rem(16px);
+   }
+    
+
+}
+.slider__price {
+    color: #151515;
+    font-family: Alegreya Sans;
+    font-size: rem(60px);
+    font-style: normal;
+    font-weight: 300;
+    line-height: rem(60px); /* 100% */
+    text-transform: uppercase;
+   
+   @include tablets {
+    margin-right: rem(51px);
+   }
+
+   @include phones {
+    margin-right: rem(48px);
+   }
+}
+ .slider__products {
+    position: relative;
+
+    .bx-controls {
+        display: none;
+
+    }
+    .bx-wrapper {
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+        overflow: hidden;
+    }
+ }
