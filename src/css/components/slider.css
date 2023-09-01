@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 30 of C:\Users\rtnav\Desktop\Новая папка\css\components\slider.scss, in `tablets'
-        from line 30 of C:\Users\rtnav\Desktop\Новая папка\css\components\slider.scss
+        on line 30 of C:\Users\rtnav\Desktop\Новая папка\src\css\components\slider.scss, in `tablets'
+        from line 30 of C:\Users\rtnav\Desktop\Новая папка\src\css\components\slider.scss
 
 25:     display: flex;
 26:     justify-content: space-between;
@@ -16,8 +16,8 @@ Error: Undefined mixin 'tablets'.
 35: }
 
 Backtrace:
-C:\Users\rtnav\Desktop\Новая папка\css\components\slider.scss:30:in `tablets'
-C:\Users\rtnav\Desktop\Новая папка\css\components\slider.scss:30
+C:\Users\rtnav\Desktop\Новая папка\src\css\components\slider.scss:30:in `tablets'
+C:\Users\rtnav\Desktop\Новая папка\src\css\components\slider.scss:30
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 30 of C:\Users\rtnav\Desktop\Новая папка\css\components\slider.scss, in `tablets'\A         from line 30 of C:\Users\rtnav\Desktop\Новая папка\css\components\slider.scss\A \A 25:     display: flex;\A 26:     justify-content: space-between;\A 27:     flex-direction: column;\A 28:    \A 29: \A 30:     @include tablets {\A 31:         align-items: center;\A 32:         text-align: center;\A 33:         margin-top: 0;\A 34:     }\A 35: }"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 30 of C:\Users\rtnav\Desktop\Новая папка\src\css\components\slider.scss, in `tablets'\A         from line 30 of C:\Users\rtnav\Desktop\Новая папка\src\css\components\slider.scss\A \A 25:     display: flex;\A 26:     justify-content: space-between;\A 27:     flex-direction: column;\A 28:    \A 29: \A 30:     @include tablets {\A 31:         align-items: center;\A 32:         text-align: center;\A 33:         margin-top: 0;\A 34:     }\A 35: }"; }

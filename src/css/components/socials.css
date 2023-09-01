@@ -1,0 +1,23 @@
+.socials__item {
+  display: inline-flex;
+  justify-content: space-between;
+  margin-right: 6px; }
+
+.socials__link {
+  text-decoration: none;
+  width: 20px;
+  height: 20px; }
+
+.socials__item-vk {
+  background: url("../img/icons/vk.svg"); }
+
+.socials__item-fb {
+  background: url("../img/icons/fb.svg"); }
+
+.socials__item-inst {
+  background: url("../img/icons/in.svg"); }
+
+.socials__item-tw {
+  background: url("../img/icons/tw.svg"); }
+
+/*# sourceMappingURL=socials.css.map */

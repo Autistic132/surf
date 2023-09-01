@@ -1,5 +1,5 @@
 $desktopContentWidth: 50vW;
-$tabletContentWidth: 64vW;
+$tabletContentWidth: 70vW;
 
 .products-menu-section {
     position: relative;
@@ -25,6 +25,7 @@ $tabletContentWidth: 64vW;
     top: 0;
     bottom: 0;
     display: flex;
+    
 }
 .products-menu__item {
     display: flex;

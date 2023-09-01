@@ -12,19 +12,19 @@
 <body>
     <div class="wrapper">
         <div class="maincontent">
-            <section data-section-id="hero" class="hero-content">
+            <section id="hero" class="hero-content">
             <header class="header ">
                 <div class="container header__container">
                 <img src="./img/Vector.png" alt="Surfboard logo" class="logo">
                 <nav class="menu">
                     <ul class="menu__list">
-                        <li data-scroll-to="benefits" class="menu__item"><a href="@" class="menu__link">О нас</a></li>
-                        <li data-scroll-to="slider" class="menu__item"><a href="@" class="menu__link">Серфборды</a></li>
-                        <li data-scroll-to="team"class="menu__item"><a href="@" class="menu__link">Команда</a></li>
-                        <li class="menu__item"><a href="@" class="menu__link">Меню</a></li>
-                        <li data-scroll-to="reviews" class="menu__item"><a href="@" class="menu__link">Отзывы</a></li>
-                        <li class="menu__item"><a href="@" class="menu__link">Как мы работаем</a></li>
-                        <li class="menu__item" data-scroll-to="team"><a href="@" class="menu__link">Контакты</a></li>
+                        <li class="menu__item"><a href="#benefits" class="menu__link">О нас</a></li>
+                        <li class="menu__item"><a href="#slider" class="menu__link">Серфборды</a></li>
+                        <li class="menu__item"><a href="#team" class="menu__link">Команда</a></li>
+                        <li class="menu__item"><a href="#products" class="menu__link">Меню</a></li>
+                        <li class="menu__item"><a href="#reviews" class="menu__link">Отзывы</a></li>
+                        <li class="menu__item"><a href="#video" class="menu__link">Как мы работаем</a></li>
+                        <li class="menu__item"><a href="#map" class="menu__link">Контакты</a></li>
                     </ul>
                 </nav>
                 <a href="tel:+78009039090" class="phone-number header__phone-number">
@@ -73,7 +73,7 @@
                 </div>
             </div>
             </section>
-            <section data-section-id="benefits" class="section benefits-section">
+            <section id="benefits" class="section benefits-section">
                 <div class="container">
                     <div class="headline">
                     <h2 class="section__title headline__title">
@@ -136,7 +136,7 @@
                     </div>
                 </div>
             </section>
-            <section data-section-id="slider" class="section slider-section"> 
+            <section id="slider" class="section slider-section"> 
                 
                 <div class="container slider__container">
                     <div class="slider__products">
@@ -628,7 +628,7 @@
                         </div>
                     </div>
             </section>
-            <section data-section-id="team" class="section team-section">
+            <section id="team" class="section team-section">
                 <div class="container team-container">
                     <h2 class="team-section__title">команда</h2>
                     <ul class="team team--version--desktop">
@@ -784,7 +784,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="section products-menu-section">
+            <section id="products" class="section products-menu-section">
                 <h1 class="products-menu-section__title">Меню</h1>
                 <ul class="products-menu">
                     <li class="products-menu__item">
@@ -843,7 +843,7 @@
                     </li>
                 </ul>
             </section>
-            <section data-section-id="reviews" class="section reviews-section">
+            <section id="reviews" class="section reviews-section">
                 <div class="container">
                 <h2 class="section__title reviews-section__title">Отзывы</h2>
                 <div class="reviews">
@@ -958,7 +958,7 @@
                   </div>
                 </div>
               </section>
-            <section data-section-id="order" class="section order-section section--color--white">
+            <section id="order" class="section order-section section--color--white">
                 <div class="container">
                 <h2 class="section__title order-section__title">Закажите доску</h2>
                 <form class="form">
@@ -1074,32 +1074,32 @@
     </div>
     <nav class="fixed-menu">
         <ul class="fixed-menu__list">
-            <li class="fixed-menu__item fixed-menu__item--active">
-                <a href="" class="fixed-menu__link"></a>
+            <li class="fixed-menu__item">
+                <a href="#hero" class="fixed-menu__link"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link"></a>
+                <a href="#benefits" class="fixed-menu__link"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link"></a>
+                <a href="#slider" class="fixed-menu__link"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link"></a>
+                <a href="#team" class="fixed-menu__link"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link"></a>
+                <a href="#products" class="fixed-menu__link"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link"></a>
+                <a href="#reviews" class="fixed-menu__link"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link"></a>
+                <a href="#video" class="fixed-menu__link"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link"></a>
+                <a href="#order" class="fixed-menu__link"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link"></a>
+                <a href="#map" class="fixed-menu__link"></a>
             </li>
         </ul>
     </nav>
@@ -1112,25 +1112,24 @@
       </a>
        <ul class="menu__list menu--vertical">
               <li class="menu__item">
-                  <a href="#" class="menu__link">О нас</a>
+                  <a href="#benefits" class="menu__link">О нас</a>
+              </li>   
+                  <a href="#slider" class="menu__link">Серфборды</a>
               </li>
               <li class="menu__item">
-                  <a href="#" class="menu__link">Серфборды</a>
+                  <a href="#tea " class="menu__link">Команда</a>
               </li>
               <li class="menu__item">
-                  <a href="#" class="menu__link">Команда</a>
+                  <a href="#products" class="menu__link">Меню</a>
               </li>
               <li class="menu__item">
-                  <a href="#" class="menu__link">Меню</a>
+                  <a href="#reviews" class="menu__link">Отзывы</a>
               </li>
               <li class="menu__item">
-                  <a href="#" class="menu__link">Отзывы</a>
+                  <a href="#video" class="menu__link">Как мы работаем</a>
               </li>
               <li class="menu__item">
-                  <a href="#" class="menu__link">Как мы работаем</a>
-              </li>
-              <li class="menu__item">
-                  <a href="#" class="menu__link">Контакты</a></li>
+                  <a href="#map" class="menu__link">Контакты</a></li>
           </ul>
       </nav>
     </div>

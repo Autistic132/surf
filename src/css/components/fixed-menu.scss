@@ -3,6 +3,10 @@
     top: 36%;
     right: 4%;
     z-index: $z-fixed-menu;
+
+    @include tablets {
+        display: none;
+    }
 }
 .fixed-menu__item {
     margin-bottom: rem(3px);
@@ -39,5 +43,5 @@
     &:hover {
         border-color: #fff;
     }
-  
+
 }
