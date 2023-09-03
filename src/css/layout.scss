@@ -24,6 +24,7 @@ margin: 0;
 background: #fff;
  -webkit-font-smoothing: antialiased;
  -moz-osx-font-smoothing: grayscale;
+ overflow: hidden;
 }
 ul {
 padding:0;
@@ -58,8 +59,8 @@ button {
 .wrapper {
     position: relative;
     width: 100%;
-    min-height: 100%;
-    overflow: hidden;
+    height: 100%;
+   
 }
 .maincontent {
    height: 100%;

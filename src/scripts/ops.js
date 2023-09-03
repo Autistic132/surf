@@ -1,39 +1,57 @@
-const fixedMenuItems = document.querySelectorAll('.fixed-menu__item');
-const windowHeight = +getComputedStyle(sections[0]).height.split('px')[0];
-let windowPositionX;
-  let addClass = (arr, classToAdd) => {
-    for (let n = 0; n < arr.length; n++) {
-      arr[n].classList.add(classToAdd);
-    }
-  };
 
-  let removeClass = (arr, classToRemove) => {
-    for (let n = 0; n < arr.length; n++) {
-      arr[n].classList.remove(classToRemove);
-    }
-  }; 
 
   const sections = $("section");
   const display = $(".maincontent");
+  const sideMenu = $(".fixed-menu");
   
   let inScroll = false;
   sections.first().addClass("active");
+
+  const countSectionPosition = sectionEq => {
+    return sectionEq * -100;
+  }
   
+  const changeMenuThemeForSection = sectionEq => {
+
+    const currentSection = sections.eq(sectionEq);
+    const menuTheme = currentSection.attr("data-sidemenu-theme");
+    const activeClass = "fixed-menu--shadowed";
+    
+
+    if (menuTheme == "black") {
+      sideMenu.addClass(activeClass);
+    } else {
+      sideMenu.removeClass(activeClass);
+    }
+
+  }
+
   const performTransition = sectionEq => {
       if (inScroll == false) {
           inScroll = true;
-      const position = sectionEq * -100;
+      const position = countSectionPosition(sectionEq);
+
+      changeMenuThemeForSection(sectionEq);
   
      let ars =  display.css({
-          transform: 'translateY(${position}%)'
+          transform: `translateY(${position}%)`
       });
-  
+
       console.log(ars);
   
       sections.eq(sectionEq).addClass("active").siblings().removeClass("active");
   
+
       setTimeout(() => {
           inScroll = false;
+          
+          sideMenu
+          .find(".fixed-menu__item")
+          .eq(sectionEq)
+          .addClass("fixed-menu__item--active")
+          .siblings()
+          .removeClass("fixed-menu__item--active");
+
       }, 1300);
   }
   };
@@ -59,7 +77,7 @@ let windowPositionX;
       console.log(deltaY);
       if (deltaY > 0) {
           //next
-          performTransition(2);
+          scrollViewport("next");
       } 
       
       if (deltaY < 0 ) {
@@ -83,7 +101,6 @@ let windowPositionX;
               break;
       } 
       }
-      
   });
   
   $("[data-scroll-to]").click((e) => {
@@ -91,44 +108,9 @@ let windowPositionX;
   
       const $this = $(e.currentTarget);
       const target = $this.attr("data-scroll-to");
-      const reqSection = $("[data-section-id=${target}]");
+      const reqSection = $(`[data-section-id=${target}]`);
+
+      performTransition(reqSection.index());
   });
 
-//nav menu 
 
-
-let addMenuClickEvent = function(linksArr, menuLinkIndex, fixedMenuLinkIndex) {
-    linksArr[menuLinkIndex].addEventListener('click', function(e) {    
-      windowPositionX = windowHeight * fixedMenuLinkIndex;
-
-      removeClass(fixedMenuItems, 'fixed-menu__item--active');
-      removeClass(fixedMenuItems, 'fixed-menu__item--bg--black--active');
-
-      if (windowPositionX >= windowHeight * 4 && windowPositionX < windowHeight * 5) {
-        addClass(fixedMenuItems, 'fixed-menu__item--bg--black');
-        fixedMenuLinks[fixedMenuLinkIndex].classList.add('fixed-menu__item--bg--black--active');
-      } else {
-        removeClass(fixedMenuItems, 'fixed-menu__item--bg--black');
-        fixedMenuItems[fixedMenuLinkIndex].classList.add('fixed-menu__item--active');
-      }
-
-      if (windowPositionX >= windowHeight * 7 && windowPositionX < windowHeight * 8) {
-        addClass(fixedMenuItems, 'fixed-item__item');
-      } else {
-        removeClass(fixedMenuItems, 'fixed-item__item');
-      }
-
-      
-    });  
-  };
-  
-  for (let i = 0; i < fixedMenuItems.length; i++) {  
-    addMenuClickEvent(fixedMenuItems, i, i);
-    
-    for (let n = 0; n < headerMeenuItems.length; n++) {
-      if (fixedMenuItems[i].attributes['href'].value == modalMenuItems[n].attributes['href'].value) {
-        addMenuClickEvent(headerMeenuItems, n, i);
-        addMenuClickEvent(modalMenuItems, n, i);
-      }
-    }
-  }

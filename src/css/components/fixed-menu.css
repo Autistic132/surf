@@ -11,7 +11,7 @@ Error: Undefined variable: "$z-fixed-menu".
 7:     @include tablets {
 8:         display: none;
 9:     }
-10: }
+10: 
 
 Backtrace:
 C:\Users\rtnav\Desktop\Новая папка\src\css\components\fixed-menu.scss:5
@@ -61,4 +61,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$z-fixed-menu\".\A         on line 5 of C:\Users\rtnav\Desktop\Новая папка\src\css\components\fixed-menu.scss\A \A 1: .fixed-menu {\A 2:     position: fixed;\A 3:     top: 36%;\A 4:     right: 4%;\A 5:     z-index: $z-fixed-menu;\A 6: \A 7:     @include tablets {\A 8:         display: none;\A 9:     }\A 10: }"; }
+  content: "Error: Undefined variable: \"$z-fixed-menu\".\A         on line 5 of C:\Users\rtnav\Desktop\Новая папка\src\css\components\fixed-menu.scss\A \A 1: .fixed-menu {\A 2:     position: fixed;\A 3:     top: 36%;\A 4:     right: 4%;\A 5:     z-index: $z-fixed-menu;\A 6: \A 7:     @include tablets {\A 8:         display: none;\A 9:     }\A 10: "; }
