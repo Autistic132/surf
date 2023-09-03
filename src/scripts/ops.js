@@ -3,6 +3,9 @@
   const sections = $("section");
   const display = $(".maincontent");
   const sideMenu = $(".fixed-menu");
+
+  const mobileDetect = new MobileDetect(window.navigator.userAgent);
+  const isMobile = mobileDetect.mobile();
   
   let inScroll = false;
   sections.first().addClass("active");
@@ -102,6 +105,8 @@
       } 
       }
   });
+
+  $(".wrapper").on("touchmove", e => e.preventDefault());
   
   $("[data-scroll-to]").click((e) => {
       e.preventDefault();
@@ -112,5 +117,20 @@
 
       performTransition(reqSection.index());
   });
+
+  //touchSwipe
+if (isMobile) {
+  $("body").swipe({
+    swipe: function (event, direction) {
+      const scroller = viewportScroller();
+      let scrollDirection = "";
+
+      if (direction == "up") scrollDirection = "next";
+      if (direction == "down") scrollDirection = "prev";
+
+      scroller[scrollDirection]();
+    },
+  });
+};
 
 
